@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+    <title>How You Spend Your 24 Hours</title>
+
+    <link rel = "stylesheet" href = "style.css">
+
+    <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+
+  <body>
+    <h1>How You Spend Your 24 Hours</h1>
+    A visualization of how you waste your time.
+    <div id = "piechart" style = "width: 500px; height: 500px;"></div>
+
+    <form>
+      Activity:
+      <input type = "text" name = "activity">
+    </form>
+    <p id = "demo">ouch</p>
+
+    <script type = "text/javascript" src = "./loadchart.js"></script>
+    <script = type = "text/javascript">
+      document.getElementById('demo').innerHTML = document.getElementById('activity').value;
+    </script>
+  </body>
+</html>
